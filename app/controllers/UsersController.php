@@ -12,7 +12,7 @@ class UsersController extends \BaseController {
 	{
 		$actives = User::where('deleted_at')->count();
 		$inactives = User::onlyTrashed()->count();
-		$total = User::count();
+		$total = User::withTrashed()->count();
 
 		return View::make('index')
 			->with('actives', $actives)

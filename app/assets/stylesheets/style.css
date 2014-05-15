@@ -4,6 +4,14 @@ html, body {
 	padding: 0;
 }
 
+body {
+	-webkit-transition: background-color 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out;
+	-ms-transition: background-color 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out;
+}
+
 form {
 	margin: 20px;
 }
