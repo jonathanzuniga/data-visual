@@ -11,7 +11,5 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', array('uses' => 'UsersController@index'));
+Route::post('show', array('as' => 'show', 'uses' => 'UsersController@show'));
