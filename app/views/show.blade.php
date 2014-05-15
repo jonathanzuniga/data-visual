@@ -2,9 +2,9 @@
 
 @section('content')
 
-<!--<script type="text/javascript">
+<script type="text/javascript">
 	var i = {{ $value }}
-</script>-->
+</script>
 <?= javascript_include_tag('visualization') ?>
 
 @stop
